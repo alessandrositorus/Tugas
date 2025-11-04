@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "8663ce4b-f1f9-4bef-89bc-f7e6ac499997",
+		"name": "TUGAS 6",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49777015",
+		"_collection_link": "https://alessandrositorus-1478331.postman.co/workspace/Alessandro's-Workspace~753c9c2f-e102-4ae3-8bd5-072b81940fca/collection/49777015-8663ce4b-f1f9-4bef-89bc-f7e6ac499997?action=share&source=collection_link&creator=49777015"
+	},
+	"item": [
+		{
+			"name": "Dokumentasi API",
+			"item": [
+				{
+					"name": "Ambil/Baca Data",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Menambah Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Valorant\",\r\n  \"genre\": \"FPS\",\r\n  \"rating\": 9.1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mengubah Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\" : 7.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/games/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"games",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menghapus Data",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"description": "Data Game Favoritku"
+		}
+	]
+}
